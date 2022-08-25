@@ -41,7 +41,7 @@ public class TV {
 		return this.estado;
 	}
 	
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	
@@ -73,7 +73,7 @@ public class TV {
 		this.canal = canal;
 	}
 	
-	public void setNumTV(int num) {
+	public static void setNumTV(int num) {
 		numTV = num;
 	}
 	
