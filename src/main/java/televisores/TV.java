@@ -60,11 +60,21 @@ public class TV {
 	}
 	
 	public void setVolumen(int volumen) {
+		if (this.volumen < 0 || this.volumen > 7) {
+			return;
+		}
 		this.volumen = volumen;
 	}
 	
 	public void setCanal(int canal) {
+		if (this.canal < 0 || this.canal > 120) {
+			return;
+		}
 		this.canal = canal;
+	}
+	
+	public void setNumTV(int num) {
+		numTV = num;
 	}
 	
 	//metodos
@@ -78,6 +88,10 @@ public class TV {
 	}
 	
 	public void canalUp() {
+		if (this.estado == false) {
+			return;
+		}
+		
 		if (this.canal < 0 || this.canal > 120) {
 			return;
 		}
@@ -86,6 +100,10 @@ public class TV {
 	}
 	
 	public void canalDown() {
+		if (this.estado == false) {
+			return;
+		}
+		
 		if (this.canal < 0 || this.canal > 120) {
 			return;
 		}
@@ -94,6 +112,10 @@ public class TV {
 	}
 	
 	public void volumenUp() {
+		if (this.estado == false) {
+			return;
+		}
+		
 		if (this.volumen < 0 || this.volumen > 7) {
 			return;
 		}
@@ -102,6 +124,10 @@ public class TV {
 	}
 	
 	public void volumenDown() {
+		if (this.estado == false) {
+			return;
+		}
+		
 		if (this.volumen < 0 || this.volumen > 7) {
 			return;
 		}
