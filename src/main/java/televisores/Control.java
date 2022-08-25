@@ -13,6 +13,14 @@ public class Control {
 		this.tv = tv;
 	}
 	
+	public void turnOn() {
+		tv.turnOn();
+	}
+	
+	public void turnOff() {
+		tv.turnOff();
+	}
+	
 	public void canalUp() {
 		tv.canalUp();
 	}
