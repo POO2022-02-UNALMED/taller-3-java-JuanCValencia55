@@ -13,6 +13,11 @@ public class Control {
 		this.tv = tv;
 	}
 	
+	public void setCanal(int canal) {
+		tv.setCanal(canal);
+	}
+	
+	//Metodos
 	public void turnOn() {
 		tv.turnOn();
 	}
